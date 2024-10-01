@@ -1,0 +1,195 @@
+2024-10-01T07:07:01.715Z [error]: {
+  "apiMethod": "middleware/auth",
+  "data": "JsonWebTokenError: invalid token\n    at Object.module.exports [as verify] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\jsonwebtoken\\verify.js:82:17)\n    at authMiddleware (C:\\Me\\NodeJs\\apparel-management\\src\\middlewares\\auth.middleware.ts:33:25)\n    at Layer.handle [as handle_request] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:175:3)"
+}
+2024-10-01T07:08:46.678Z [info]: {
+  "data": {
+    "id": "6651f293-01e4-4cfa-ba5e-5edf6ba9b1ec",
+    "name": "Admin",
+    "email": "admin@example.com",
+    "password": "$2a$10$C0BTSsILG9XFz8ad5Zw/Je8UMJImhtkj39VfODMRLISFkV/ebLNVu",
+    "role": "admin"
+  }
+}
+2024-10-01T07:11:50.854Z [info]: {
+  "data": {
+    "id": "6651f293-01e4-4cfa-ba5e-5edf6ba9b1ec",
+    "name": "Admin",
+    "email": "admin@example.com",
+    "password": "$2a$10$C0BTSsILG9XFz8ad5Zw/Je8UMJImhtkj39VfODMRLISFkV/ebLNVu",
+    "role": "admin"
+  }
+}
+2024-10-01T07:12:06.375Z [error]: {
+  "apiMethod": "middleware/auth",
+  "data": "JsonWebTokenError: invalid token\n    at Object.module.exports [as verify] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\jsonwebtoken\\verify.js:82:17)\n    at authMiddleware (C:\\Me\\NodeJs\\apparel-management\\src\\middlewares\\auth.middleware.ts:34:25)\n    at Layer.handle [as handle_request] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:175:3)"
+}
+2024-10-01T07:14:12.471Z [info]: {
+  "data": {
+    "id": "6651f293-01e4-4cfa-ba5e-5edf6ba9b1ec",
+    "name": "Admin",
+    "email": "admin@example.com",
+    "password": "$2a$10$C0BTSsILG9XFz8ad5Zw/Je8UMJImhtkj39VfODMRLISFkV/ebLNVu",
+    "role": "admin"
+  }
+}
+2024-10-01T09:08:58.442Z [info]: {
+  "data": {
+    "id": "6651f293-01e4-4cfa-ba5e-5edf6ba9b1ec",
+    "name": "Admin",
+    "email": "admin@example.com",
+    "password": "$2a$10$C0BTSsILG9XFz8ad5Zw/Je8UMJImhtkj39VfODMRLISFkV/ebLNVu",
+    "role": "admin"
+  }
+}
+2024-10-01T09:16:48.258Z [info]: {
+  "data": {
+    "id": "8d51cc15-a16c-423a-aec4-0769350031e1",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$2VdQBKVarpAl3BjsPA.lsegjEGQFukkdI5NyuIRk7vrbG6PN1bMJW",
+    "role": "vendor"
+  }
+}
+2024-10-01T09:19:56.783Z [info]: {
+  "data": {
+    "id": "8d51cc15-a16c-423a-aec4-0769350031e1",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$2VdQBKVarpAl3BjsPA.lsegjEGQFukkdI5NyuIRk7vrbG6PN1bMJW",
+    "role": "vendor"
+  }
+}
+2024-10-01T09:22:11.201Z [error]: {
+  "apiMethod": "middleware/auth",
+  "data": "JsonWebTokenError: invalid signature\n    at C:\\Me\\NodeJs\\apparel-management\\node_modules\\jsonwebtoken\\verify.js:171:19\n    at getSecret (C:\\Me\\NodeJs\\apparel-management\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at Object.module.exports [as verify] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at authMiddleware (C:\\Me\\NodeJs\\apparel-management\\src\\middlewares\\auth.middleware.ts:31:25)\n    at Layer.handle [as handle_request] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:346:12)"
+}
+2024-10-01T09:22:17.259Z [error]: {
+  "apiMethod": "middleware/auth",
+  "data": "JsonWebTokenError: invalid signature\n    at C:\\Me\\NodeJs\\apparel-management\\node_modules\\jsonwebtoken\\verify.js:171:19\n    at getSecret (C:\\Me\\NodeJs\\apparel-management\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at Object.module.exports [as verify] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at authMiddleware (C:\\Me\\NodeJs\\apparel-management\\src\\middlewares\\auth.middleware.ts:31:25)\n    at Layer.handle [as handle_request] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\index.js:346:12)"
+}
+2024-10-01T09:22:29.092Z [info]: {
+  "data": {
+    "id": "8d51cc15-a16c-423a-aec4-0769350031e1",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$2VdQBKVarpAl3BjsPA.lsegjEGQFukkdI5NyuIRk7vrbG6PN1bMJW",
+    "role": "vendor"
+  }
+}
+2024-10-01T09:33:10.491Z [info]: {
+  "data": {
+    "id": "e96ca9f8-77a5-460e-9a16-a43b153e9b86",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$EiIGcNXWRQvfXBrIyJPRc.LlCRfB/aqqVRiwiK1JpNof7K5ep61HK",
+    "role": "vendor"
+  }
+}
+2024-10-01T09:33:58.067Z [info]: {
+  "data": {
+    "id": "e96ca9f8-77a5-460e-9a16-a43b153e9b86",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$EiIGcNXWRQvfXBrIyJPRc.LlCRfB/aqqVRiwiK1JpNof7K5ep61HK",
+    "role": "vendor"
+  }
+}
+2024-10-01T10:11:57.485Z [info]: {
+  "data": {
+    "id": "e96ca9f8-77a5-460e-9a16-a43b153e9b86",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$EiIGcNXWRQvfXBrIyJPRc.LlCRfB/aqqVRiwiK1JpNof7K5ep61HK",
+    "role": "vendor"
+  }
+}
+2024-10-01T10:57:49.404Z [info]: {
+  "data": {
+    "id": "e96ca9f8-77a5-460e-9a16-a43b153e9b86",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$EiIGcNXWRQvfXBrIyJPRc.LlCRfB/aqqVRiwiK1JpNof7K5ep61HK",
+    "role": "vendor"
+  }
+}
+2024-10-01T10:58:49.405Z [info]: {
+  "data": {
+    "id": "e96ca9f8-77a5-460e-9a16-a43b153e9b86",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$EiIGcNXWRQvfXBrIyJPRc.LlCRfB/aqqVRiwiK1JpNof7K5ep61HK",
+    "role": "vendor"
+  }
+}
+2024-10-01T11:00:31.569Z [info]: {
+  "data": {
+    "id": "e96ca9f8-77a5-460e-9a16-a43b153e9b86",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$EiIGcNXWRQvfXBrIyJPRc.LlCRfB/aqqVRiwiK1JpNof7K5ep61HK",
+    "role": "vendor"
+  }
+}
+2024-10-01T11:00:36.739Z [info]: {
+  "data": {
+    "id": "e96ca9f8-77a5-460e-9a16-a43b153e9b86",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$EiIGcNXWRQvfXBrIyJPRc.LlCRfB/aqqVRiwiK1JpNof7K5ep61HK",
+    "role": "vendor"
+  }
+}
+2024-10-01T11:01:29.889Z [info]: {
+  "data": {
+    "id": "6651f293-01e4-4cfa-ba5e-5edf6ba9b1ec",
+    "name": "Admin",
+    "email": "admin@example.com",
+    "password": "$2a$10$C0BTSsILG9XFz8ad5Zw/Je8UMJImhtkj39VfODMRLISFkV/ebLNVu",
+    "role": "admin"
+  }
+}
+2024-10-01T11:18:33.235Z [info]: {
+  "data": {
+    "id": "e96ca9f8-77a5-460e-9a16-a43b153e9b86",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$EiIGcNXWRQvfXBrIyJPRc.LlCRfB/aqqVRiwiK1JpNof7K5ep61HK",
+    "role": "vendor"
+  }
+}
+2024-10-01T11:18:41.227Z [info]: {
+  "data": {
+    "id": "e96ca9f8-77a5-460e-9a16-a43b153e9b86",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$EiIGcNXWRQvfXBrIyJPRc.LlCRfB/aqqVRiwiK1JpNof7K5ep61HK",
+    "role": "vendor"
+  }
+}
+2024-10-01T12:08:43.109Z [error]: {
+  "apiMethod": "middleware/auth",
+  "data": "TokenExpiredError: jwt expired\n    at C:\\Me\\NodeJs\\apparel-management\\node_modules\\jsonwebtoken\\verify.js:190:21\n    at getSecret (C:\\Me\\NodeJs\\apparel-management\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at Object.module.exports [as verify] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at authMiddleware (C:\\Me\\NodeJs\\apparel-management\\src\\middlewares\\auth.middleware.ts:30:25)\n    at Layer.handle [as handle_request] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at C:\\Me\\NodeJs\\apparel-management\\src\\middlewares\\validate-request.middleware.ts:15:5\n    at Layer.handle [as handle_request] (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Me\\NodeJs\\apparel-management\\node_modules\\express\\lib\\router\\route.js:119:3)"
+}
+2024-10-01T12:08:48.519Z [info]: {
+  "data": {
+    "id": "e96ca9f8-77a5-460e-9a16-a43b153e9b86",
+    "name": "Abhinav Varshney",
+    "email": "test@gmail.com",
+    "password": "$2a$10$EiIGcNXWRQvfXBrIyJPRc.LlCRfB/aqqVRiwiK1JpNof7K5ep61HK",
+    "role": "vendor"
+  }
+}
+2024-10-01T12:09:45.072Z [info]: Admin user already exists.
+2024-10-01T12:09:58.727Z [info]: Admin user already exists.
+2024-10-01T12:10:08.053Z [info]: Admin user already exists.
+2024-10-01T12:11:10.747Z [info]: Admin user already exists.
+2024-10-01T12:11:29.866Z [info]: Admin user already exists.
+2024-10-01T12:12:12.067Z [info]: Admin user already exists.
+2024-10-01T12:13:39.200Z [info]: Admin user already exists.
+2024-10-01T12:13:50.955Z [info]: Admin user already exists.
+2024-10-01T12:13:55.610Z [info]: Admin user already exists.
+2024-10-01T12:14:51.054Z [info]: Admin user already exists.
+2024-10-01T12:14:51.071Z [info]: Seeding Processed
+2024-10-01T12:15:25.996Z [info]: Admin user already exists.
+2024-10-01T12:15:26.011Z [info]: Seeding Processed

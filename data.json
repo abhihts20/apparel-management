@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "6651f293-01e4-4cfa-ba5e-5edf6ba9b1ec",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "password": "$2a$10$C0BTSsILG9XFz8ad5Zw/Je8UMJImhtkj39VfODMRLISFkV/ebLNVu",
+      "role": "admin"
+    },
+    {
+      "id": "e96ca9f8-77a5-460e-9a16-a43b153e9b86",
+      "name": "Abhinav Varshney",
+      "email": "test@gmail.com",
+      "password": "$2a$10$EiIGcNXWRQvfXBrIyJPRc.LlCRfB/aqqVRiwiK1JpNof7K5ep61HK",
+      "role": "vendor"
+    },
+    {
+      "id": "2f3a04e2-85ee-4225-9d63-6916ec6e18a2",
+      "name": "Abhinav Varshney",
+      "email": "test-1@gmail.com",
+      "password": "$2a$10$cPCq6oC4Vy8ix9jzuxrHq.Jz4Jv43i1nrcu3.hGD5WfAt5fOShoz.",
+      "role": "vendor"
+    }
+  ],
+  "inventory": [
+    {
+      "title": "Product 1",
+      "description": "Descrifew fwefwefewf fwfewfewfwe",
+      "code": "P2-SL",
+      "size": "L",
+      "quantity": 5000,
+      "price": 1002,
+      "vendorId": "e96ca9f8-77a5-460e-9a16-a43b153e9b86"
+    },
+    {
+      "title": "Product 2",
+      "description": "Descrifew fwefwefewf fwfewfewfwe",
+      "code": "P3-SM",
+      "size": "M",
+      "quantity": 50320,
+      "price": 10000,
+      "vendorId": "e96ca9f8-77a5-460e-9a16-a43b153e9b86"
+    },
+    {
+      "title": "Product 2",
+      "description": "Descrifew fwefwefewf fwfewfewfwe",
+      "code": "P3-SM",
+      "size": "M",
+      "quantity": 50320,
+      "price": 10000,
+      "vendorId": "e96c19f8-77a5-460e-9a16-a43b153e9b86"
+    }
+  ]
+}
