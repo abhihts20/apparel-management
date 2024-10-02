@@ -25,6 +25,7 @@ const seedAdminUser = async () => {
     );
 
     if (!existingAdmin) {
+      console.log(adminUser);
       const hashedPassword = await bcrypt.hash(adminUser.password, 10);
       data.users.push({
         ...adminUser,

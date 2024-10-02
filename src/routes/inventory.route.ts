@@ -24,14 +24,14 @@ router.post(
   '/',
   validateRequest(apparelRegisterSchema),
   authMiddleware,
-  authorize(UserRole.ADMIN, UserRole.VENDOR),
+  authorize(UserRole.VENDOR),
   createInventory
 );
 router.put(
   '/:code/:size',
   validateRequest(apparelUpdateSchema),
   authMiddleware,
-  authorize(UserRole.ADMIN, UserRole.VENDOR),
+  authorize(UserRole.VENDOR),
   updateInventory
 );
 router.put(

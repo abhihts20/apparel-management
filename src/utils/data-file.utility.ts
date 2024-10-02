@@ -1,5 +1,5 @@
 import { User } from '../interfaces/user.interface';
-import fs from 'fs';
+import fs, { writeFileSync } from 'fs';
 import path from 'path';
 import { Inventory } from '../interfaces/inventory.interface';
 
@@ -10,6 +10,13 @@ const filePath = path.join(__dirname + '../../../data.json');
  **/
 export const readData = (): { users: User[]; inventory: Inventory[] } => {
   try {
+    if (!fs.existsSync(filePath)) {
+      writeFileSync(
+        filePath,
+        JSON.stringify({ users: [], inventory: [] }, null, 2),
+        { encoding: 'utf-8' }
+      );
+    }
     const data = fs.readFileSync(filePath, { encoding: 'utf-8' });
     return JSON.parse(data) || { users: [], inventory: [] };
   } catch (err) {
@@ -20,7 +27,9 @@ export const readData = (): { users: User[]; inventory: Inventory[] } => {
 /**
  * Function to handle write data into the json file acting as a db for this app
  **/
-export const writeData = (data: { users: User[]; inventory: Inventory[] } | undefined) => {
+export const writeData = (
+  data: { users: User[]; inventory: Inventory[] } | undefined
+) => {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2), {
     encoding: 'utf-8',
   });

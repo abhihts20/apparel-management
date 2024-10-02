@@ -79,7 +79,7 @@ const login = async (
       !(await bcrypt.compare(password, currUserByEmail.password))
     ) {
       return res
-        .status(HttpStatusCode.Unauthorized)
+        .status(HttpStatusCode.BadRequest)
         .json({ message: errorMessages.invalidCredentials });
     }
 

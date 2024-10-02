@@ -25,10 +25,12 @@ const createInventory = (
     const newInvenotryData: Inventory = body;
     newInvenotryData.vendorId = user?.id || '';
 
-    const isCodeAndSizeAlreadyExists = fileData?.inventory.find(
+    const isCodeAndSizeAlreadyExists = fileData?.inventory.some(
       (el) =>
         el.code === newInvenotryData.code && el.size === newInvenotryData.size
     );
+
+    logger.info(`Product Existance : ${isCodeAndSizeAlreadyExists}`);
 
     if (isCodeAndSizeAlreadyExists) {
       return res
@@ -70,6 +72,8 @@ const updateInventory = (
     const indexOfProduct = fileData?.inventory.findIndex(
       (el) => el.code === code && el.size === size && el.vendorId === user?.id
     );
+
+    logger.info(`Index for the product ${indexOfProduct}`);
 
     if (indexOfProduct < 0) {
       return res
@@ -309,6 +313,13 @@ const findMinimumPriceToFulfilOrder = (
       const stock = inventory.find(
         (inv) => inv.code === code && inv.size === size
       );
+      if (!stock) {
+        return res
+          .status(HttpStatusCode.BadRequest)
+          .json({
+            message: `Products with code ${code} and size ${size} not available`,
+          });
+      }
       if (stock && stock.quantity < quantity) {
         return res
           .status(HttpStatusCode.BadRequest)
